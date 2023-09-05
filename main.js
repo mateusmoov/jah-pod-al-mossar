@@ -138,7 +138,7 @@ lunchButton.textContent = lunchVariants[randomIndex]
 const getLunchImgPath = (key) => {
   const options = {
     early: './assets/cooking1.jpg',
-    almost: './assets/cooking1.png',
+    almost: './assets/cooking.png',
     ready: './assets/ready1.jpg',
     keep_eating: './assets/ready1.jpg',
     finished: './assets/finished1.png',
