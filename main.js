@@ -160,8 +160,8 @@ function resetState() {
   divImg.style.display = 'none'
   const canvas = document.getElementById('canvas')
   canvas.classList.add('hidden')
-  const textSpam = document.getElementById("textResult")
-  textSpam.textContent = ''
+  const textSpan = document.getElementById("textResult")
+  textSpan.textContent = ''
 }
 
 const getResult = () => {
@@ -172,7 +172,7 @@ const getResult = () => {
     almost: hour === 11,
     ready: hour === 12,
     keep_eating: hour === 13,
-    finished: hour => 14 && hour <= 18,
+    finished: hour === 14 && hour <= 18,
     not_yet: hour >= 18 && hour <= 10
   })
 
@@ -196,7 +196,6 @@ const getResult = () => {
     backgroundColor = 'green'
     text = 'Ainda pod'
   } else if(currentPeriod(currentHour).finished) {
-    console.log('cai aqui')
     imgPath = getLunchImgPath('finished')
     backgroundColor = 'red'
     text = 'Não, acabou'
@@ -214,19 +213,19 @@ const jahPodeAlmossar = async () => {
   const button = document.getElementById("lunchButton")
   
   button.classList.add('hidden')
-  const spamElement = document.createElement('spam')
-  spamElement.classList.add('fade-in', 'spam-load')
-  spamElement.textContent = 'Verificando o Al mosso'
+  const spanElement = document.createElement('span')
+  spanElement.classList.add('fade-in', 'span-load')
+  spanElement.textContent = 'Verificando o Al mosso'
   const divLoadDots = document.getElementById('load')
   divLoadDots.style.display = 'block'
-  divLoadDots.insertBefore(spamElement, divLoadDots.firstChild)
+  divLoadDots.insertBefore(spanElement, divLoadDots.firstChild)
 
   await timeout(3000);
   divLoadDots.style.display = 'none'
   
   const divImg = document.getElementById('imgResult')
   divImg.style.display = 'flex'
-  divLoadDots.removeChild(spamElement)
+  divLoadDots.removeChild(spanElement)
   const canvas = document.getElementById('canvas')
   
   const buttonReset = document.getElementById('resetButton')
@@ -238,8 +237,8 @@ const jahPodeAlmossar = async () => {
   buttonReset.classList.remove('hidden')
   buttonReset.addEventListener('click', resetState)
   
-  const textSpam = document.getElementById("textResult")
-  textSpam.textContent = result.text
+  const textSpan = document.getElementById("textResult")
+  textSpan.textContent = result.text
   const lunchImage = document.getElementById("lunchImg")
   lunchImage.src = result.img
 }

@@ -49,7 +49,7 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-.spam-load {
+.span-load {
   color: var(--text-primary-color);
   font-weight: 500;
   font-size: 70px;
@@ -100,7 +100,7 @@ p, h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
 }
 
-.spam-result {
+.span-result {
   font-weight: 500;
   font-size: 40px;
   color: var(--text-primary-color);
@@ -130,10 +130,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 @media only screen and (max-width: 500px) {
-  .spam-load {
+  .span-load {
     font-size: 25px;
   }
-  .spam-result {
+  .span-result {
     font-size: 20px;
   }
   .img_result {
