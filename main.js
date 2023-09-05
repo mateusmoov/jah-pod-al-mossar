@@ -186,7 +186,7 @@ const getResult = () => {
   } else if(currentPeriod(currentHour).almost) {
     imgPath = getLunchImgPath('almost')
     backgroundColor = 'red'
-    text = Preparando
+    text = 'Preparando'
   } else if(currentPeriod(currentHour).ready) {
     imgPath = getLunchImgPath('ready')
     backgroundColor = 'green'
