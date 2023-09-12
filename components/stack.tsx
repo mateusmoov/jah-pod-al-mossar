@@ -29,7 +29,7 @@ export default function Stack() {
        <SectionHeading> Stackzinha do site!</SectionHeading> 
        <ul className='flex flex-wrap justify-center gap-2 text-lg text-[#f3f3f3]'>
         {stackData.map((stack,index) => (
-        <motion.li className='bg-[#782BF1] border border-black/[0.1] rounded-xl px-5 py-3' key={index}
+        <motion.li className='bg-[#782BF1] border border-black/[0.1] rounded-full px-3 py-2 ' key={index}
         variants = {fadeInAnimationVariants}
         initial ="initial"
         whileInView="animate"

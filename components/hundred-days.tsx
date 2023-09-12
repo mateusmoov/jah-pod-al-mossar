@@ -6,10 +6,10 @@ import  HundredPattern  from './hundred-pattern';
 import {hundredDaysData} from '@/lib/data'
 
 
+
 export default function HundredDays() {
 
   const {ref} = useSectionInView("#100Dias",1); 
-
 
   return (
     <section id="100Dias" ref={ref} className='sm:mb-20 scroll-mt-28' >
@@ -33,7 +33,21 @@ export default function HundredDays() {
            data_details={item.details} />
         ))}
      </div>
-  
+
+    
+     {/* Esse é o "botão mais preguiçoso feito no planeta Terra*/}
+
+     <div className='flex flex-col sm:flex-row justify-center mb-28'>
+      <a
+    href="https://twitter.com/intent/tweet?text=Eu%20publicamente%20me%20comprometo%20aos%20desafios%20do%20100%20Dias%20De%20Codigo%20come%C3%A7ando%20hoje!&url=https://100diasdecodigo.dev&hashtags=100DiasDeCodigo&via=he4rtdevs%20@danielhe4rt"
+    target='_blank'
+    className="group bg-[#782BF1] text-[#f3f3f3] font-bold px-7 py-3
+    flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110
+    hover:bg-[#782BF1] active:scale-105 transition">
+    Tweete pra começar o desafio!
+     </a>
+    </div>
+
     </section>
     );
 }

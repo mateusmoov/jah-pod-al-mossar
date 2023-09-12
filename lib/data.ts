@@ -91,5 +91,4 @@ export const stackData = [
   "Next.js",
   "Node.js",
   "Framer Motion",
-]
-
+] as const;
