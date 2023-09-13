@@ -43,7 +43,7 @@ export default function Almosso() {
     <section ref= {ref} id="almosso" className='mt-28 max-w-[45rem]  scroll-mt-28 text-center sm:mb-40'>
         <SectionHeading>Tá na hora  de Al-mossar?</SectionHeading>
 
-        <div className='flex justify-center items-center mt-20'>
+        <div className='flex justify-center items-center mb-28 py-4 '>
           
           {currentImage && (
             <img

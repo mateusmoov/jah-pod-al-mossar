@@ -17,19 +17,19 @@ export default function Oracao() {
     transition={{delay:0.175}}
     id="oração"
     >
-       <div className='mb-10 mt-4 px-4 flex justify-center'>
-    <SectionHeading>Oração pro Al-mosso🙏</SectionHeading>    
+       <div className=' py-4 px-4 flex justify-center'>
+    <SectionHeading>Oração para o vosso Al-mosso🙏</SectionHeading>    
     </div>
 
       <p className='px-4 py-4 text-2xl font-bold !leading-[1.5] sm:text-2xl
-        mb-28 max-w-[50rem] text-center sm:mb-0 text-[#f3f3f3]'>
+        mb-20 max-w-[50rem] text-center sm:mb-0 text-[#f3f3f3]'>
       <span className='font-bold'>O al-mosso aceita</span> <span className='text-[#782BF1]'> todos </span>
       <span>aqueles que o procuram. Só basta você aceitá-lo em seu <span  className='text-[#782BF1]'>estômago.</span></span>{" "}
       <span className='font-bold'>Deixe seu agradecimento por ele todo dia com esta pequena oração.</span>
       </p>
 
-      <p className='px-4 py-1 text-1xl font-medium !leading-[1.5] sm:text-1xl
-        mb-28 max-w-[50rem] text-center sm:mb-0 text-gray-500 italic'>
+      <p className='px-4 py-1 sm:text-2xl font-medium !leading-[1.5] text-xl
+        mb-15 max-w-[50rem] text-center sm:mb-0 text-gray-500 italic'>
             <span className='!leading-[2.0]'>Ó, Senhor das Panelas e Fogões, escute a minha súplica neste momento de fome que me consome.</span><br/>
             <br/>
             <span>Pão nosso que estais no forno a assar,</span><br/>
