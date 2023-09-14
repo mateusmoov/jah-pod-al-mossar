@@ -32,7 +32,7 @@ ProjectProps)
     ref={ref}
     className=' bg-gray-950 max-w-[42rem] border border-black/[0.5] 
     overflow-hidden sm:pr-8 relative sm:h-[23rem] 
-    //  hover:bg-gray-800 transition sm:group-even:pl-8 rounded-lg'
+     hover:bg-gray-800 transition sm:group-even:pl-8 rounded-lg'
     >
     
     <div className='pt-4  pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]'>

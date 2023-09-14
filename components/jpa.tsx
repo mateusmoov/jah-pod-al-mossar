@@ -69,7 +69,7 @@ export default function Intro() {
         wrapper='div'
         cursor={true}
         repeat={Infinity}
-        style={{fontSize:'em', color:'#782BF1', paddingLeft:'5px'}}
+        style={{fontSize:'1em', color:'#782BF1', paddingLeft:'5px'}}
         />
         </h2>
       
