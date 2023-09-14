@@ -12,7 +12,7 @@ export default function Sindicate() {
 
 
   return (
-    <section  ref={ref} id="sindicato" className='scroll-mt-28 '>
+    <section  ref={ref} id="sindicato" className=' sm:mb-20 scroll-mt-28 '>
     <SectionHeading>Apresentando o sindicato</SectionHeading>
     <div>
         {sindicatoData.map((project, index) => (

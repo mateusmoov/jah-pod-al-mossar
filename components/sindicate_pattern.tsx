@@ -30,12 +30,12 @@ ProjectProps)
         >
     <section 
     ref={ref}
-    className=' bg-gray-950 max-w-[42rem] border border-black/5 
-    overflow-hidden sm:pr-6 relative sm:h-[23rem] 
-     hover:bg-gray-800 transition group-even:pl-8 rounded-lg'
+    className=' bg-gray-950 max-w-[42rem] border border-black/[0.5] 
+    overflow-hidden sm:pr-8 relative sm:h-[23rem] 
+     hover:bg-gray-800 transition sm:group-even:pl-8 rounded-lg'
     >
     
-    <div className='pt-4  pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[18rem]'>
+    <div className='pt-4  pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]'>
 
       <h3 className='text-3xl font-bold text-[#782BF1]'>{title}</h3>  
       <p className='mt-2 leading-relaxed  font-bold text-[#f3f3f3]'>{description}</p>
@@ -45,7 +45,7 @@ ProjectProps)
             ))}
       </ul>
       </div>
-      <Image  src={imageUrl} alt={title} quality={95}  className='absolute top-0.5 bottom-0.5  -right-20 w-[25rem] rounded-t-lg shadow-2xl transition
+      <Image  src={imageUrl} alt={title} quality={95}  className='absolute  hidden  sm:block top-0.5 bottom-0.5 -right-20 w-[25rem] rounded-t-lg shadow-2xl transition
     group-hover: scale-[1.04]
      group-hover:-translate-x-3
      group hover:translate-y-3

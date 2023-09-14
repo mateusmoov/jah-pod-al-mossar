@@ -38,17 +38,17 @@ export default function Intro() {
       </div>
     </div>
 
-    <motion.div className='mb-10 mt-4 px-4 flex justify-center'
+    <motion.div className='mb-10 mt-4 px-4 flex justify-center text-center'
     initial={{opacity:0, y:100}}
     animate ={{opacity:1, y:0}}
     transition={{delay:0.1}}
     >
-        <h1 className='sm:text-5xl text-4xl font-bold text-[#f3f3f3]'>JAH PODEH ALMOSSAR ? 🍛</h1>
+        <h1 className='sm:text-4xl text-4xl font-bold text-[#f3f3f3] text-center]'>JAH PODE ALMOSSAR ? 🍱</h1>
     </motion.div>
 
     <div >
-    <h2  className='sm:text-4xl text-4xl font-bold  text-[#f3f3f3] flex justify-center'>
-        Nós AMAMOS
+    <h2  className='sm:text-4xl text-2xl font-bold  text-[#f3f3f3] flex  justify-center text-center'>
+        Nós amamos
         <TypeAnimation 
         sequence={[
         'al-mosso.',
@@ -63,18 +63,18 @@ export default function Intro() {
         1500,
         'al-moh-sar.',
         1500,
-        'aomosso',
+        'aomosso.',
         1500,
         ]}
         wrapper='div'
         cursor={true}
         repeat={Infinity}
-        style={{fontSize:'1em', color:'#782BF1', paddingLeft:'8px'}}
+        style={{fontSize:'1em', color:'#782BF1', paddingLeft:'5px'}}
         />
         </h2>
       
-      <motion.p className='mt-4 px-4 py-4 text-2xl font-bold !leading-[1.5] sm:twext-4xl
-        mb-28 max-w-[50rem] text-center sm:mb-0 text-[#f3f3f3]'
+      <motion.p className='mt-4 px-4 py-4 text-2xl font-bold !leading-[1.5] sm:text-2xl
+        mb-17 max-w-[50rem] text-center text-[#f3f3f3]'
         initial={{opacity:0, y:100}}
         animate = {{opacity:1, y:0}}
         transition={{delay:0.1}}
@@ -85,16 +85,15 @@ export default function Intro() {
         Tenham um ótimo almosso. 
       </motion.p>
     
-     <motion.div className='flex flex-col sm:flex-row justify-center'
+     <motion.div className='flex flex-row justify-center'
      initial={{opacity:0, y:100}}
      animate ={{opacity:1, y:0}}
      transition={{delay:0.1}}
      >
-     <Link href="#almosso"  className="group bg-[#782BF1] text-[#f3f3f3] font-bold px-7 py-3 
-      flex items-center gap-2 rounded-full outline-none  focus:scale-110 hover:scale-110
-    hover:bg-[#782BF1] active:scale-105 transition">Eu quero AL-MOH-SAR</Link>
+     <Link href="#almosso" className="group bg-[#782BF1] text-[#f3f3f3] font-bold px-10 py-4 mb-28 mt-10
+      flex items-center text-center gap-2 rounded-full outline-none  focus:scale-110 hover:scale-110
+    hover:bg-[#782BF1] active:scale-105 transition  ">Eu quero AL-MOH-SAR</Link>
      </motion.div>
-
 
     </div>
    </section>
