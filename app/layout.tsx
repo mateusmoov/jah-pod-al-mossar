@@ -2,13 +2,22 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Header from "@/components/header"
 import ActiveSectionContextProvider from '@/context/active-section-context'
-import Footer from '@/components/footer'
+import Head from 'next/head'
+import { Metadata } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Almosso',
-  description: 'Almossor',
+export const metadata: Metadata = {
+  title: 'Jah pode almossar?',
+  description: 'Descubra se você já pode al mossar sim ou não',
+  keywords: 'horário de almoço, almoço, restaurante, comida, rango',
+  authors: { name: 'He4rt Devs', url: 'https://heartdevs.com/' },
+  openGraph: {
+    title: 'Jah pode almossar?',
+    description: 'Descubra se você já pode al mossar sim ou não',
+    type: 'website'
+  }
+
 }
 
 export default function RootLayout({
