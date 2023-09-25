@@ -2,7 +2,6 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Header from "@/components/header"
 import ActiveSectionContextProvider from '@/context/active-section-context'
-import Head from 'next/head'
 import { Metadata } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
