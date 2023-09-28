@@ -14,7 +14,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Jah pode almossar?',
     description: 'Descubra se você já pode al mossar sim ou não',
-    type: 'website'
+    type: 'website',
+    images: [
+      { url: '../public/almosso.png', width: 512, height: 512 ,alt: 'almosso img'}
+    ]
   }
 
 }

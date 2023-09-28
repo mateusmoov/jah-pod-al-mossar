@@ -14,16 +14,18 @@ export default function Almosso() {
   const {ref} = useSectionInView("Almosso");  
  
   const [currentImage, setCurrentImage] = useState<string | null>(null);
-    
+
   useEffect(() => {
-      const horaAtual = new Date().getHours();
+      const dataAtual = new Date();
+      const horaAtual = dataAtual.getHours();
+      const minutosAtual = dataAtual.getHours();
   
        if( horaAtual >= 10 && horaAtual < 11){
         setCurrentImage(cooking.src);
       }
-     else  if (horaAtual >= 11 && horaAtual < 12) {
+     else  if (horaAtual >= 11 && (horaAtual === 11 && minutosAtual < 30)) {
         setCurrentImage(almost.src); 
-      } else if (horaAtual >= 12 && horaAtual < 13) {
+      } else if ((horaAtual === 11 && minutosAtual >= 30) && horaAtual < 13) {
         setCurrentImage(ready.src); 
       } else if (horaAtual >=13 && horaAtual <14) {
         setCurrentImage(keep_eating.src); 
