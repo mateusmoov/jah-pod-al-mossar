@@ -18,23 +18,21 @@ export default function Almosso() {
   useEffect(() => {
       const dataAtual = new Date();
       const horaAtual = dataAtual.getHours();
-      const minutosAtual = dataAtual.getHours();
-  
+      const minutosAtual = dataAtual.getMinutes()
+
        if( horaAtual >= 10 && horaAtual < 11){
         setCurrentImage(cooking.src);
       }
      else  if (horaAtual >= 11 && (horaAtual === 11 && minutosAtual < 30)) {
         setCurrentImage(almost.src); 
-      } else if ((horaAtual === 11 && minutosAtual >= 30) && horaAtual < 13) {
-        setCurrentImage(ready.src); 
-      } else if (horaAtual >=13 && horaAtual <14) {
-        setCurrentImage(keep_eating.src); 
-      }
-      else if (horaAtual >=14 && horaAtual < 18) {
-        setCurrentImage(finished.src); 
-      }
-      else {
-        setCurrentImage(finished.src); 
+      } else if (horaAtual > 11 || (horaAtual === 11 && minutosAtual >= 30)) {
+        setCurrentImage(ready.src);
+      } else if (horaAtual >= 13 && horaAtual < 14) {
+        setCurrentImage(keep_eating.src);
+      } else if (horaAtual >= 14 && horaAtual < 18) {
+        setCurrentImage(finished.src);
+      } else {
+        setCurrentImage(finished.src);
       }
 
       

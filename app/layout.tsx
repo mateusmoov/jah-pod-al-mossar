@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: 'Descubra se você já pode al mossar sim ou não',
     type: 'website',
     images: [
-      { url: '../public/almosso.png', width: 512, height: 512 ,alt: 'almosso img'}
+      { url: 'almosso.png', width: 512, height: 512 ,alt: 'almosso img'}
     ]
   }
 
