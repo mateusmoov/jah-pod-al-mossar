@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Header from "@/components/header";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +35,7 @@ export default function RootLayout({
         <ActiveSectionContextProvider>
           <Header />
           {children}
+          <Analytics />
         </ActiveSectionContextProvider>
       </body>
     </html>
