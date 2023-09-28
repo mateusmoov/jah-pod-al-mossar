@@ -1,6 +1,6 @@
-import fernando from "@/public/fernando.jpg"
-import cherry from "@/public/cherry.jpg"
-import canhassi from '@/public/canhassi.png'
+import fernando from "@/public/fernando.jpg";
+import cherry from "@/public/cherry.jpg";
+import canhassi from "@/public/canhassi.png";
 
 export const links = [
   {
@@ -27,12 +27,9 @@ export const links = [
     name: "Stack",
     hash: "#stack",
   },
-
 ] as const;
 
-
 export const sindicatoData = [
-
   {
     title: "Canhassi",
     description:
@@ -46,7 +43,7 @@ export const sindicatoData = [
     description:
       "Rainha do Ruby. 5 vezes campeã do Soletrando Norte/Nordeste. No sigilo, coda em JS puro e diz que adora.",
     tags: ["Ruby", "TypeScript", "Elixir", "Golang", "Perl"],
-    imageUrl:cherry,
+    imageUrl: cherry,
   },
 
   {
@@ -56,34 +53,32 @@ export const sindicatoData = [
     tags: [".NET", "Vue.js", "Node", "Python", "PostgreSQl"],
     imageUrl: fernando,
   },
-
 ] as const;
 
-
- export const hundredDaysData = [
-
+export const hundredDaysData = [
   {
-    queue:1,
-    title:"Programe",
-    details:"Estude programação por no mínimo uma hora todos os dias pelos próximos 100 dias."
+    queue: 1,
+    title: "Programe",
+    details:
+      "Estude programação por no mínimo uma hora todos os dias pelos próximos 100 dias.",
   },
 
   {
-    queue:2,
-    title:"Tweete",
-    details:"Tweete seu progresso todos os dias com a hashtag #100DiasDeCodigo. "
+    queue: 2,
+    title: "Tweete",
+    details:
+      "Tweete seu progresso todos os dias com a hashtag #100DiasDeCodigo. ",
   },
 
-    {
-      queue:3,
-    title:"Interaja",
-    details:"Todos os dias, entre em contato com pelo menos duas pessoas no Twitter que também estão participando do desafio."
-    }
-] as const ;
-
+  {
+    queue: 3,
+    title: "Interaja",
+    details:
+      "Todos os dias, entre em contato com pelo menos duas pessoas no Twitter que também estão participando do desafio.",
+  },
+] as const;
 
 export const stackData = [
-
   "HTML",
   "CSS",
   "TypeScript",
