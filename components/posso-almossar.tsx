@@ -22,7 +22,7 @@ export default function Almosso() {
       setCurrentImage(cooking.src);
     } else if (horaAtual >= 11 && horaAtual === 11 && minutosAtual < 30) {
       setCurrentImage(almost.src);
-    } else if (horaAtual > 11 || (horaAtual === 11 && minutosAtual >= 30)) {
+    } else if (horaAtual >= 11  && (horaAtual === 11 && minutosAtual >= 30)) {
       setCurrentImage(ready.src);
     } else if (horaAtual >= 13 && horaAtual < 14) {
       setCurrentImage(keep_eating.src);
