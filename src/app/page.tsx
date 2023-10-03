@@ -6,6 +6,8 @@ import { getStatusText } from "@/utils/status";
 import Confetti from "react-confetti";
 import useWindowSize from "react-use/lib/useWindowSize";
 import { getRandomImage, images } from "@/utils/randomMeme";
+import Image from "next/image";
+import Link from "next/link";
 
 type StatusType = {
   text: string;
@@ -24,8 +26,6 @@ export default function Home() {
     console.log(hours);
     const minutes = currentTime.getMinutes();
     const text = getStatusText(hours, minutes);
-
-    console.log(text);
 
     let bg = "bg-red-500";
     if (hours === 11 && minutes >= 30 || hours === 12 || hours >= 13) {
@@ -47,7 +47,9 @@ export default function Home() {
     <div className={twMerge(status?.bg)}>
       {isAlmossar && <Confetti width={width} height={height} />}
       <Section
-        className={twMerge("h-[100vh] flex justify-center items-center")}
+        className={twMerge(
+          "h-[100vh] flex justify-center items-center flex-col relative"
+        )} // Adicione a classe "relative" aqui
       >
         <div className="flex text-center flex-col items-center">
           <span className="text-5xl text-white font-light -tracking-tighter mb-7">
@@ -57,6 +59,11 @@ export default function Home() {
           <span className="text-4xl font-bold mt-6 w-[800px]">
             {status?.text}
           </span>
+        </div>
+        <div className="absolute bottom-0 mx-auto mb-4">
+          <Link href="https://discord.gg/he4rt">
+            <Image width={65} height={57} src="/he4rt.svg" alt="logo he4rt" />
+          </Link>
         </div>
       </Section>
     </div>
