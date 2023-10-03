@@ -5,7 +5,7 @@ const ALMOSSAR_TIMES = {
   ENDED: 14,
 };
 
-export const getStatusText = (hours: number, minutes: number): string => {
+export const getStatusText = (hours: number, minutes: number) => {
   console.log(hours, minutes)
   if (hours === ALMOSSAR_TIMES.PREPARING || hours === 11 && minutes <= 30) {
     return "tá preparando ainda, calmai 👨‍🍳👨‍🍳👨‍🍳";
