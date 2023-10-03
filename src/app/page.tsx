@@ -51,7 +51,7 @@ export default function Home() {
       <Section
         className={twMerge(
           "h-[100vh] flex justify-center items-center flex-col relative"
-        )} // Adicione a classe "relative" aqui
+        )}
       >
         <div className="flex text-center flex-col items-center">
           <span className="text-5xl text-white font-light -tracking-tighter mb-7">
