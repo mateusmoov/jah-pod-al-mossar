@@ -10,7 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 type StatusType = {
-  text: string;
+  text: string | undefined;
   bg: string;
 };
 
