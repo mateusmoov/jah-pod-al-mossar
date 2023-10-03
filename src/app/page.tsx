@@ -28,10 +28,12 @@ export default function Home() {
     const text = getStatusText(hours, minutes);
 
     let bg = "bg-red-500";
-    if (hours === 11 && minutes >= 30 || hours === 12 || hours >= 13) {
+    if (
+      text === "agora jah pod al-mossar" ||
+      text === "ainda dá pra al-mossar, mas tá acabando"
+    ) {
       bg = "bg-green-600";
       setIsAlmossar(true);
-      console.log("cheogu aqui");
     }
 
     setStatus({ text, bg });
