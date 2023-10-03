@@ -16,7 +16,7 @@ export const getStatusText = (hours: number, minutes: number): string | undefine
   if (hours >= ALMOSSAR_TIMES.ENDING && hours <= 14) {
     return "ainda dá pra al-mossar, mas tá acabando";
   }
-  if (hours >= ALMOSSAR_TIMES.ENDED) {
+  if (hours >= ALMOSSAR_TIMES.ENDED && hours <= 16) {
     return "vacilou amigo, acabou o al-mosso, volte amanhã";
   }
   if (hours > 16) {
