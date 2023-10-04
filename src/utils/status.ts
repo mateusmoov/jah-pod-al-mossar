@@ -42,7 +42,7 @@ const statusTexts = [
   {
     key: "NOTIME",
     texts: [
-      "Já era, meu chapa! Acabou o almoço a essa hora meu amigo? 😤",
+      "Já era, meu chapa! Vendo se dá pra al-mossar a essa hora? Que vergonha. 😤",
       "Preciso te falar que acho meio estranho você entrar no site a essa hora pra ver se pode al-mossar? Doido. 🤔",
     ]
   },
