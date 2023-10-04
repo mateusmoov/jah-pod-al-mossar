@@ -78,7 +78,7 @@ export const getStatusText = (hours: number, minutes: number) => {
         }
         break;
       case "ENDED":
-        if (hours >= ALMOSSAR_TIMES[key] && hours <= 16) {
+        if (hours === ALMOSSAR_TIMES[key] && hours <= 16) {
           return getRandomText(texts);
         }
         break;
