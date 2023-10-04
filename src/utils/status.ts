@@ -83,7 +83,7 @@ export const getStatusText = (hours: number, minutes: number) => {
         }
         break;
       case "NOTIME":
-        if (hours > ALMOSSAR_TIMES[key]) {
+        if (hours > ALMOSSAR_TIMES[key] || (hours >= 0 && hours < 10)) {
           return getRandomText(texts);
         }
         break;
