@@ -23,7 +23,6 @@ export default function Home() {
   const getStatus = () => {
     const currentTime = new Date();
     const hours = currentTime.getHours();
-    console.log(hours);
     const minutes = currentTime.getMinutes();
     const text = getStatusText(hours, minutes);
 
@@ -38,8 +37,6 @@ export default function Home() {
 
     setStatus({ text, bg });
   };
-
-  const imageRoute = getRandomImage(images);
 
   useEffect(() => {
     getStatus();
@@ -57,10 +54,10 @@ export default function Home() {
           <span className="text-3xl sm:text-5xl md:text-6xl text-white font-light tracking-tighter mb-2 sm:mb-4 md:mb-6">
             JÁ TÁ PODENDO <br />
           </span>
-          <span className="font-bold text-5xl sm:text-9xl text-white">
+          <span className="font-bold text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-white">
             AL-MOSSAR?
           </span>
-          <span className="text-2xl sm:text-4xl font-bold mt-2 sm:mt-4 md:mt-6 max-w-screen-lg">
+          <span className="text-2xl sm:text-2xl md:text-4xl font-bold mt-2 sm:mt-4 md:mt-6 max-w-screen-lg">
             {status?.text}
           </span>
         </div>
