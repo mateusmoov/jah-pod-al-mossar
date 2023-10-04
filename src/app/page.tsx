@@ -27,10 +27,17 @@ export default function Home() {
     const text = getStatusText(hours, minutes);
 
     let bg = "bg-red-500";
-    if (
-      text === "agora jah pod al-mossar" ||
-      text === "ainda dá pra al-mossar, mas tá acabando"
-    ) {
+
+    const isAlmossar = [
+      "Ainda dá pra al-mossar, mas vá rápido! 🍽️🚨",
+      "Última chamada pro al-mosso! 📢🍛",
+      "Pega logo seu al-mosso antes que suma! 🍛🏃‍♀️",
+      "Al-mosso is on the table my friend! 🍴🥘",
+      "Agora jah pod al-mossar! 🍽️🚀",
+      "Corre, que o al-mosso liberou! 🏃‍♂️🍛",
+    ];
+
+    if (isAlmossar.includes(text)) {
       bg = "bg-green-600";
       setIsAlmossar(true);
     }
