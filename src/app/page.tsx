@@ -50,21 +50,23 @@ export default function Home() {
       {isAlmossar && <Confetti width={width} height={height} />}
       <Section
         className={twMerge(
-          "h-[100vh] flex justify-center items-center flex-col relative"
+          "h-screen flex justify-center items-center flex-col relative"
         )}
       >
-        <div className="flex text-center flex-col items-center">
-          <span className="text-5xl text-white font-light -tracking-tighter mb-7">
+        <div className="flex flex-col items-center text-center">
+          <span className="text-3xl sm:text-5xl md:text-6xl text-white font-light tracking-tighter mb-2 sm:mb-4 md:mb-6">
             JÁ TÁ PODENDO <br />
           </span>
-          <span className="font-bold text-9xl text-white">AL-MOSSAR?</span>
-          <span className="text-4xl font-bold mt-6 w-[800px]">
+          <span className="font-bold text-5xl sm:text-9xl text-white">
+            AL-MOSSAR?
+          </span>
+          <span className="text-2xl sm:text-4xl font-bold mt-2 sm:mt-4 md:mt-6 max-w-screen-lg">
             {status?.text}
           </span>
         </div>
-        <div className="absolute bottom-0 mx-auto mb-4">
+        <div className="absolute bottom-0 mx-auto mb-2 sm:mb-4 md:mb-6">
           <Link href="https://discord.gg/he4rt">
-            <Image width={65} height={57} src="/he4rt.svg" alt="logo he4rt" />
+            <Image width={50} height={44} src="/he4rt.svg" alt="logo he4rt" />
           </Link>
         </div>
       </Section>
